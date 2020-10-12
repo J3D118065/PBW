@@ -1,9 +1,11 @@
 <?php
 namespace App\Controllers;
+
 class Beranda extends BaseController {
-    public function index(){
-        return view('beranda_v');
+
+    public function index() {
+        echo view('header_v');
+        echo view('beranda_v');
+        echo view('footer_v');
     }
 }
-
-?>
